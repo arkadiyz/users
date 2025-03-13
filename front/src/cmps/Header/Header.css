@@ -1,0 +1,17 @@
+.header-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid #4ebbb1;
+  background: #4ebbb1;
+  box-shadow: -3px 3px 20px 0px #4ebbb1;
+}
+
+.header-container p {
+  cursor: pointer;
+  color: #f8f8f8;
+  font-weight: 500;
+  font-size: 15px;
+}
