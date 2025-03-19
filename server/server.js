@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -14,15 +14,15 @@ const authRoutes = require('./api/auth/auth.routes');
 const usersRoutes = require('./api/users/users.routes');
 app.use(express.json());
 app.use(cookieParser());
-app.use(bodyParser.json());
-app.use(
-  session({
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secret: false },
-  })
-);
+// app.use(bodyParser.json());
+// app.use(
+//   session({
+//     secret: 'keyboard cat',
+//     resave: false,
+//     saveUninitialized: true,
+//     cookie: { secret: false },
+//   })
+// );
 
 if (process.env.NODE_ENV === 'prodaction') {
   app.use(express.static(path.resolve(__dirname, 'public')));

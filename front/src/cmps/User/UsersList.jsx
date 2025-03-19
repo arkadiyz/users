@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAllUsers } from '../../services/auth.service';
+import { getAllUsers } from '../../services/net.service';
 import UserPreview from './UserPreview';
 import './User.css';
 

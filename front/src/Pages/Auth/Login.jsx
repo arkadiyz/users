@@ -13,7 +13,7 @@ import {
   Segment,
 } from 'semantic-ui-react';
 import LogoIcon from '../../assets/icons/logo.png';
-import { login } from '../../services/auth.service';
+import { login } from '../../services/net.service';
 import { useSelector, useDispatch } from 'react-redux';
 import { setloading } from '../../store/loaderSlice';
 const Login = () => {

@@ -12,7 +12,7 @@ import {
   Segment,
 } from 'semantic-ui-react';
 import LogoIcon from '../../assets/icons/logo.png';
-import { signUp } from '../../services/auth.service';
+import { signUp } from '../../services/net.service';
 import { useSelector, useDispatch } from 'react-redux';
 import { setloading } from '../../store/loaderSlice';
 import { useNavigate } from 'react-router-dom';

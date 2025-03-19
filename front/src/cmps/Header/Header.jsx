@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Image } from 'semantic-ui-react';
 import LogoIcon from '../../assets/icons/logo.png';
-import { logout } from '../../services/auth.service';
+import { logout } from '../../services/net.service';
 import './Header.css';
 const Header = () => {
   const navigate = useNavigate();
